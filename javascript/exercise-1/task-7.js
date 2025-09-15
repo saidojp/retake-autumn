@@ -7,7 +7,7 @@ function task7(n) {
   let nn = Number("" + n + n); // превращаем в "nn"
   let nnn = Number("" + n + n + n); // превращаем в "nnn"
   let result = n + nn + nnn;
-  console.log(`Задание 7: ${n} + ${nn} + ${nnn} = ${result}`);
+  console.log(`topshiriq 7: ${n} + ${nn} + ${nnn} = ${result}`);
   return result;
 }
 
