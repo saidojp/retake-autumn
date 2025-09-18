@@ -4,3 +4,5 @@ function factorial(n) {
   }
   return n * factorial(n - 1); // рекурсивный вызов
 }
+
+console.log(factorial(5)); // 👉 120

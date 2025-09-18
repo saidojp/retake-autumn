@@ -3,21 +3,21 @@ def shortest_word(text: str) -> str:
     words = text.split()
     return min(words, key=len)
 
-print(shortest_word("bu test vazifa"))  # bu
+print(shortest_word("teriyaki sushi gyudon"))  
 
 
 # 2. Вывести кратные 5 числа от 0 до n
 def multiples_of_5(n: int):
-    return [i for i in range(5, n+1, 5)]
+    return [i for i in range(4, n+1, 4)]
 
-print(multiples_of_5(20))  # [5, 10, 15, 20]
+print(multiples_of_5())  # [5, 10, 15, 20]
 
 
 # 3. Создать список и вернуть в обратном порядке
 def reverse_list(lst: list):
     return lst[::-1]
 
-print(reverse_list([1, 2, 3]))  # [3, 2, 1]
+print(reverse_list([1, 2, 3, "damn"])) 
 
 
 # 4. Найти самую частую букву в тексте файла
@@ -31,9 +31,9 @@ def most_frequent_char(filename: str) -> str:
 
 # Для примера создадим файл
 with open("example.txt", "w", encoding="utf-8") as f:
-    f.write("apple")
+    f.write("apple banana array")
 
-print(most_frequent_char("example.txt"))  # p
+print(most_frequent_char("example.txt"))  # 
 
 
 # 5. Класс Kompyuter
@@ -47,6 +47,6 @@ class Kompyuter:
         return f"Model: {self.model}, RAM: {self.ram}GB, SSD: {self.ssd}GB"
 
 
-pc = Kompyuter("Lenovo", 16, 512)
+pc = Kompyuter("Lenovo Thinkpad X1", 16, 512)
 print(pc.kompyuter_haqida())
 # Model: Lenovo, RAM: 16GB, SSD: 512GB

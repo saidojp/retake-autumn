@@ -15,5 +15,10 @@ function binarySearch(arr, target) {
     }
   }
 
-  return -1; // если не найден
+  return -1; // если не найдено
 }
+
+// Пример:
+let numbers = [1, 3, 5, 7, 9, 11, 13];
+console.log(binarySearch(numbers, 7)); // 👉 3 (индекс)
+console.log(binarySearch(numbers, 4)); // 👉 -1 (нет в массиве)
